@@ -1,0 +1,142 @@
+/* Core Page Visibility Rules */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Authentication State Rules */
+body.not-authenticated .role-logged-in {
+    display: none;
+}
+
+body.authenticated .role-logged-out {
+    display: none;
+}
+
+/* Admin Role Rules */
+.role-admin {
+    display: none;
+}
+
+body.is-admin .role-admin {
+    display: block;
+}
+
+/* General Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+main {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Table Styling */
+.table {
+    background-color: white;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+
+/* Button Spacing */
+.btn {
+    margin-right: 0.5rem;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+/* Badge Styling for Request Status */
+.badge {
+    font-size: 0.875rem;
+    padding: 0.35em 0.65em;
+}
+
+/* Toast Styling */
+.toast {
+    min-width: 250px;
+}
+
+/* Request Items */
+.request-item {
+    margin-bottom: 0.5rem;
+}
+
+.request-item input[type="number"] {
+    max-width: 100px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Alert Enhancements */
+.alert {
+    border-radius: 0.5rem;
+}
+
+/* Card Enhancements */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Modal Enhancements */
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+/* Utility Classes */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Status Badges */
+.status-pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.status-approved {
+    background-color: #198754;
+}
+
+.status-rejected {
+    background-color: #dc3545;
+}
